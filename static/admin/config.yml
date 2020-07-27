@@ -1,0 +1,17 @@
+backend:
+  name: github
+  branch: master # Branch to update (optional; defaults to master)
+  repo: siMs0n/gatsby-tutorial-project
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "team"
+    label: "Team"
+    folder: "src/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Team member", name: "title", widget: "string" }
+      - { label: "Bio", name: "bio", widget: "markdown" }
